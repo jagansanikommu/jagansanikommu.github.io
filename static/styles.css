@@ -62,7 +62,7 @@
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #bd5d38;
+  --bs-link-color: #e27347;
   --bs-link-hover-color: #974a2d;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
@@ -236,11 +236,11 @@ sup {
 }
 
 a {
-  color: var(--bs-link-color);
+  color: #6f42c1;
   text-decoration: underline;
 }
 a:hover {
-  color: var(--bs-link-hover-color);
+  color: gray;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -3654,7 +3654,7 @@ textarea.form-control-lg {
   --bs-nav-tabs-border-color: #dee2e6;
   --bs-nav-tabs-border-radius: 0.375rem;
   --bs-nav-tabs-link-hover-border-color: #e9ecef #e9ecef #dee2e6;
-  --bs-nav-tabs-link-active-color: #495057;
+  --bs-nav-tabs-link-active-color: #f2f8ff;
   --bs-nav-tabs-link-active-bg: #fff;
   --bs-nav-tabs-link-active-border-color: #dee2e6 #dee2e6 #fff;
   border-bottom: var(--bs-nav-tabs-border-width) solid var(--bs-nav-tabs-border-color);
@@ -8043,7 +8043,7 @@ textarea.form-control-lg {
 /* rtl:end:remove */
 .text-primary {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+  color: #6f42c1;
 }
 
 .text-secondary {
@@ -8145,6 +8145,10 @@ textarea.form-control-lg {
 .bg-success {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-success-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.new-nav-color {
+  background-color: #6f42c1; /* Replace #00ff00 with the color of your choice */
 }
 
 .bg-info {
@@ -10883,6 +10887,10 @@ p.lead {
   font-weight: 800;
   letter-spacing: 0.05rem;
   text-transform: uppercase;
+  color: white;
+}
+#sideNav .navbar-nav .nav-item .nav-link:hover {
+  color: lightgrey; /* Light grey color on hover */
 }
 #sideNav .navbar-toggler:focus {
   outline-color: #d48a6e;
@@ -10909,7 +10917,7 @@ p.lead {
   #sideNav .navbar-brand .img-profile {
     max-width: 10rem;
     max-height: 10rem;
-    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+    border: 0.5rem solid rgba(256, 256, 256, 0.2);
   }
   #sideNav .navbar-collapse {
     display: flex;
@@ -10961,7 +10969,7 @@ p.lead {
   margin-right: 0;
 }
 .social-icons .social-icon:hover {
-  background-color: #bd5d38;
+  background-color: #6f42c1;;
 }
 
 .dev-icons {
@@ -11006,3 +11014,5 @@ section.resume-section .resume-section-content {
       height: 50px;
   }
 }
+
+
