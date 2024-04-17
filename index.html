@@ -20,9 +20,35 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark new-nav-color fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="static/profile3.3.jpg" alt="..." /></span>
+                <div class="image">
+                <span class="d-block d-lg-none"><img class="zoom-image img-fluid img-profile rounded-circle mx-auto mb-2" src="static/profile3.3.jpg" alt="..." /></span>
+               </div>
                 <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="static/profile3.3.jpg" alt="..." /></span>
             </a>
+
+
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                var zoomImages = document.querySelectorAll('.zoom-image');
+                var fullscreenImage = document.createElement('div');
+                fullscreenImage.id = 'fullscreen-image';
+                var fullscreenImg = new Image();
+                fullscreenImage.appendChild(fullscreenImg);
+                document.body.appendChild(fullscreenImage);
+
+                zoomImages.forEach(function(zoomImage) {
+                    zoomImage.addEventListener('click', function() {
+                        fullscreenImg.src = zoomImage.src;
+                        fullscreenImage.style.display = 'block';
+                    });
+                });
+
+                fullscreenImage.addEventListener('click', function() {
+                    fullscreenImage.style.display = 'none';
+                });
+            });
+
+                </script>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
