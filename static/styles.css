@@ -11015,4 +11015,31 @@ section.resume-section .resume-section-content {
   }
 }
 
+.image {
+  position: relative;
+}
+
+.zoom-image {
+  width: 100%;
+  max-width: 100%;
+  cursor: pointer;
+}
+
+#fullscreen-image {
+  display: none;
+  position: fixed;
+  top: 16%;
+  left: 16%;
+  width: 70%;
+  height: 90%;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 9999;
+}
+
+#fullscreen-image img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+}
 
